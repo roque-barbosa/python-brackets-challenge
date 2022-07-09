@@ -29,6 +29,8 @@ def isBalanced(brackets):
             if stack != [] and stack[-1] == "[":
                 stack.pop()
             else: return  "NO"
+    if len(stack) != 0:
+        return "NO"
         
     return "YES"
 
